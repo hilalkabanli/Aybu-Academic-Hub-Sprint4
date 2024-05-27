@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AYBU Academic Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">
+      AYBU <br />
+      Academic <br />
+      Hub
+    </a>
+
+    <input type="checkbox" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="index.html" style="--i: 0">Home</a>
+      <a href="pages/ask-answer/ask_answer.html" style="--i: 1">Ask&Answer</a>
+      <a href="pages/lecture-notes/lecture-notes.html" style="--i: 2">Lecture Notes</a>
+      <a href="pages/news/news.html" style="--i: 3">News</a>
+      <a href="pages/contact/contactus_form.html" style="--i: 8">Contact</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="main-page">
+      <h1>AYBU Academic Hub</h1>
+      <p>
+        AYBU Academic Hub is a platform where students can access course notes, past exam questions, and other academic resources. News, career opportunities, and all the things that will work for you is in here. Platform is designed to help students succeed in their academic journey.
+      </p>
+    </div>
+
+    <div class="images">
+      <div class="photo">
+        <img src="background.png" alt="photo" />
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright © 2022 AYBU Academic Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Weather Display -->
+  <div id="weather">
+    <h3>Weather in AYBU</h3>
+    <p>Loading...</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var city = "Ankara";
+
+      $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&appid=506c04c8964f81d05743f45f600991e8', function(weather) {
+        var temperature = weather.main.temp.toFixed(0);
+        $('#weather').html('<h3>Weather in AYBU</h3><p>Temperature: ' + temperature + '°C</p>');
+      }, "json");
+    });
+  </script>
+</body>
+</html>

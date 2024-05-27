@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="lecture-notes.js"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <header class="header">
+            <a href="#" class="logo">AYBU <br> Academic <br> Hub</a>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <nav class="navbar">
+                <a href="../../index.html" style="--i:0;">Home</a>
+                <a href="../ask-answer/ask_answer.html" style="--i:1;">Ask&Answer</a>
+                <a href="lecture-notes.html" style="--i:2;">Lecture Notes</a>
+                <a href="../news/news.html" style="--i:3;">News</a>
+                <a href="../contact/contactus_form.html" style="--i:8;">Contact</a>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <div class="image"></div>
+        <div class="main">
+            <div class="title">
+                <h1>Lecture Notes</h1>
+                Ankara Yıldırım Beyazıt University hosts course notes for Engineering, Architecture, Business
+                Administration, Economics, and Education faculties. The course notes are categorized into service
+                courses and departmental courses. You can easily view and print the course notes in .pdf format
+            </div>
+            <div class="all-courses">
+                <h2>Service Courses</h2>
+                <p>Service courses are the courses that are common to all departments.</p>
+                <div id="service-courses" class="courses"></div>
+                <h2>Computer Engineering Courses</h2>
+                <div id="computer-engineering-courses" class="courses"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="contactus_js.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="../../plugins/bootstrap-compatible-validator/src/validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../plugins/intl-tel-input-master/build/css/intlTelInput.css">
+    <script src="../../plugins/intl-tel-input-master/build/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="../../plugins/ajax-file-uploader/css/jquery.uploader.css">  
+    <script src="../../plugins/ajax-file-uploader/dist/jquery.uploader.min.js"></script>
+    <script src="../../plugins/ajax-file-uploader/src/index.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+  <body>
+    <div class="nav">
+      <header class="header">
+          <a href="#" class="logo">AYBU <br> Academic <br> Hub</a>
+
+          <input type="checkbox" id="check">
+          <label for="check" class="icons">
+              <i class='bx bx-menu' id="menu-icon"></i>
+              <i class='bx bx-x' id="close-icon"></i>
+          </label>
+          <nav class="navbar">
+              <a href="../../index.html" style="--i:0;">Home</a>
+              <a href="../ask-answer/ask_answer.html" style="--i:1;">Ask&Answer</a>
+              <a href="../lecture-notes/lecture-notes.html" style="--i:2;">Lecture Notes</a>
+              <a href="../news/news.html"--i:3;">News</a>
+             
+              <a href="../contact/contactus_form.html" style="--i:8;">Contact</a>
+          </nav>
+      </header>
+  </div>
+   <div id="contact-form">
+    <div class="container" style="margin:150px auto">
+      <h1>Contact Us</h1>
+      <div class="form-group">
+          <label class="col-form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control is-invalid">
+      <div class="invalid-feedback">Required Field.</div></div>
+
+      <div class="form-group">
+          <label class="col-form-label">Email</label>
+          <input type="text" id="email" name="email" class="form-control is-invalid">
+      <div class="invalid-feedback">Must be a valid email.</div></div>
+
+      <div class="form-group">
+        <label class="col-form-label" id="phoneLabel">Phone Number</label>
+        <input type="text" id="phone" name="phone" class="form-control is-invalid">
+      </div>
+
+      <div class="form-group">
+        <label class="col-form-label">Message</label>
+        <input type="text" id="message" name="message" class="form-control is-invalid">
+    <div class="invalid-feedback">Required Field.</div></div>
+
+    <div class="form-group">
+      <label class="col-form-label" id="question">Are you a student at AYBU?</label><br>
+      <input type="checkbox" id="checkbox" name="student">
+      <label for="checkbox">Yes</label>
+  </div>  
+
+      <button type="button" class="btn btn-block btn-primary">Submit</button>
+  </div>
+   </div>
+  </body>
+</html>

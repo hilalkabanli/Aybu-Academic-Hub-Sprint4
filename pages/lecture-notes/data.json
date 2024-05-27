@@ -1,0 +1,47 @@
+{
+    "serviceCourses": [
+      {
+        "name": "Calculus I",
+        "link": "../courses/calculus1.html"
+      },
+      {
+        "name": "Physics I",
+        "link": "../courses/physics1.html"
+      },
+      {
+        "name": "Physics II",
+        "link": "../courses/physics2.html"
+      },
+      {
+        "name": "Chemistry",
+        "link": "../courses/chemistry.html"
+      },
+      {
+        "name": "Differential Equations",
+        "link": "../courses/dif.html"
+      }
+    ],
+    "computerEngineeringCourses": [
+      {
+        "name": "Object Oriented Programming",
+        "link": "../courses/oop.html"
+      },
+      {
+        "name": "Data Structures",
+        "link": "../courses/data.html"
+      },
+      {
+        "name": "Computer Networks",
+        "link": "../courses/network.html"
+      },
+      {
+        "name": "Operating Systems",
+        "link": "../courses/os.html"
+      },
+      {
+        "name": "Database Management Systems",
+        "link": "../courses/database.html"
+      }
+    ]
+  }
+  
